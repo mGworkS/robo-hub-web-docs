@@ -15,7 +15,7 @@ The following choices were confirmed in the UI clarification on 31 October 2026.
 | ID | Choice | Meaning |
 | --- | --- | --- |
 | D01 | Learning paths structure discovery and progression. | Represent the existing learning offer and its progression, using the humanoids structure below as the example. This does not yet decide whether the interface also offers an equally prominent catalogue. |
-| D02 | Visitors without signing in can listen to teasers and selected complete lectures. | Complete samples must be distinguishable from teasers. The particular sample episodes and access to other lectures remain open. |
+| D02 | Visitors without signing in can listen to teasers and selected complete lectures. | Complete samples must be distinguishable from teasers. The particular sample episodes remain open; access to other lectures follows the learning path purchase model in D14. |
 | D03 | The main path is a recommendation; all episodes available to the listener can be selected directly. | Starting an available episode does not depend on completing earlier episodes. Keep the recommended order and content prerequisites visible as guidance. |
 | D04 | Listening positions are available across devices. | A listener can resume the same episode and language edition on a smartphone at the position saved while listening on a computer, and vice versa. D11 defines positions per language edition. How the service recognises the same listener remains open. |
 | D05 | Audio continues while the listener browses other pages within the platform, with a compact player that remains accessible. | Internal page navigation preserves the current playback session. The compact player remains reachable on the supported device sizes; its detailed controls and placement remain open. |
@@ -26,6 +26,8 @@ The following choices were confirmed in the UI clarification on 31 October 2026.
 | D10 | Interface language and listening language can be selected independently. | German menus can accompany an English lecture, and English menus can accompany a German lecture. Changing one selection does not force a change of the other. |
 | D11 | Keep a separate listening position for each language edition. | Switching the listening language of an episode uses the saved position of the target edition; if no position is saved, that edition starts at the beginning. Positions remain available across devices under D04. |
 | D12 | Share episode completion across German and English editions. | Completing either edition marks the logical episode as completed in both languages. Manual changes affect this common status. The same episode is counted once within a learning path, regardless of listening language. |
+| D13 | Provide the cheatsheet directly on the episode page and as a PDF download. | Offer an online reading view and a downloadable PDF for the episode's cheatsheet, subject to the listener's access. The broader page arrangement remains proposed in P01. |
+| D14 | Unlock the remaining lectures through an individual purchase per learning path. | The purchase unit is the learning path. Display its purchase and access status and provide a purchase entry point. Exact price, included content, access duration, language entitlements and treatment of future additions remain open. |
 
 ## Learning path example: Humanoids
 
@@ -53,22 +55,22 @@ Detailed page layouts, additional player controls and navigation labels remain t
 
 ## Proposed episode page
 
-Proposal P01 for discussion: bring the full title, short description, learning objectives, readable prerequisites, place in the learning path, listening language, player, completion control and cheatsheet access together on one episode page. Present teaser or full lecture actions according to the listener's access. Q06 will determine whether the cheatsheet is readable on the page, downloadable as a PDF, or both. This proposed page arrangement remains separate from the confirmed decisions above.
+Proposal P01 for discussion: bring the full title, short description, learning objectives, readable prerequisites, place in the learning path, listening language, player, completion control and cheatsheet access together on one episode page. Present teaser or full lecture actions according to the listener's access. D13 confirms that the cheatsheet is readable on this page and downloadable as a PDF. The remaining page arrangement is still a proposal; its acceptance is not implied by the cheatsheet format choice.
 
 ## Open UI questions
 
 | ID | Question | Why it matters |
 | --- | --- | --- |
 | Q02 | Which episodes contribute to the path progress total, including optional prerequisites and supplementary episodes? | D09 settles automatic completion and manual correction, and D12 settles completion across editions. The set of episodes included in the path total remains open. |
-| Q03 | Which complete episodes serve as public samples, and how is access to the rest obtained? | Determines access labels and entry points. Prices, paid scope and Spotify entitlements remain open in the product documentation. |
+| Q03 | Which complete episodes serve as public samples, and what content, language editions, access duration and future additions does a learning path purchase include? | D14 settles purchase per learning path. The purchase scope, price and any Spotify entitlement remain to be clarified for access labels and purchase information. |
 | Q04 | Which controls and placement should the compact and full player provide, including seeking and playback speed? | Defines the player details. Continued playback during internal navigation is settled in D05; offering the next episode with an explicit start is settled in D06. |
 | Q05 | How should initial language preferences be chosen and remembered, and how should an unavailable language edition be presented? | Independent selections and position handling are settled in D10 and D11. Defaults, preference persistence and edition availability states remain open. |
-| Q06 | Should the cheatsheet be readable on the episode page, available as a PDF download, or both, and is the page arrangement in P01 appropriate? | Determines how supplementary material and episode information fit into the listening experience. |
+| Q06 | How should the reading view and PDF action be arranged on the episode page, which cheatsheets are available with public samples, and is the rest of P01 appropriate? | D13 settles both reading and PDF download. Detailed arrangement, public sample material access and the remaining episode page proposal remain open. |
 | Q07 | What is the first delivery scope, and how should the path, catalogue and visual presentation relate? | Determines the page set, navigation emphasis and prototype boundaries. |
 | Q08 | How should a listener be recognised across devices, and how should the UI handle a new device, no saved position or unavailable synchronisation? | Specifies access and resume states needed for D04 without choosing an account system or technical architecture. |
 
-A framework, hosting provider, account system, payment mechanism and platform RAG feature have not been chosen. Technical implementation belongs in the web application repository after the relevant requirements are clarified.
+The purchase unit is defined in D14. A framework, hosting provider, account model, payment provider and checkout implementation remain open; no platform RAG feature has been chosen. Technical implementation belongs in the web application repository after the relevant requirements are clarified.
 
 ## Decision provenance
 
-D01 through D12 were confirmed by the user during the UI clarification on 31 October 2026. The open questions above retain the details that have not yet been decided. P01 is a proposed layout for clarification.
+D01 through D14 were confirmed by the user during the UI clarification on 31 October 2026. The open questions above retain the details that have not yet been decided. P01 remains a proposed layout beyond the cheatsheet placement and formats confirmed in D13.
