@@ -18,6 +18,8 @@ The following choices were confirmed in the UI clarification on 31 October 2026.
 | D02 | Visitors without signing in can listen to teasers and selected complete lectures. | Complete samples must be distinguishable from teasers. The particular sample episodes and access to other lectures remain open. |
 | D03 | The main path is a recommendation; all episodes available to the listener can be selected directly. | Starting an available episode does not depend on completing earlier episodes. Keep the recommended order and content prerequisites visible as guidance. |
 | D04 | Listening positions are available across devices. | A listener can resume the same episode on a smartphone at the position saved while listening on a computer, and vice versa. How the service recognises the same listener remains open. |
+| D05 | Audio continues while the listener browses other pages within the platform, with a compact player that remains accessible. | Internal page navigation preserves the current playback session. The compact player remains reachable on the supported device sizes; its detailed controls and placement remain open. |
+| D06 | At the end of a lecture, offer the next available episode and wait for the listener to start it. | Where a next episode exists, present it as a choice. Playback of the next episode begins only after the listener explicitly starts it. |
 
 ## Learning path example: Humanoids
 
@@ -41,7 +43,7 @@ The progression above is recommended guidance under D03. Episode counts and cont
 
 Existing [editorial metadata](https://github.com/mGworkS/humanoid-pod-assets-docs/blob/main/docs/en/metadata_and_versioning.md) supplies episode titles, short descriptions, subject and series, audience, objectives, readable prerequisites and keywords. Public episode references use full titles; stable IDs associate content and language editions internally.
 
-Detailed page layouts, player behaviour, navigation labels and language switching are still to be specified. The bilingual learning offer does not itself decide the languages of interface controls.
+Detailed page layouts, additional player controls, navigation labels and language switching remain to be specified. Playback during internal navigation and at the end of a lecture is defined in D05 and D06. The bilingual learning offer does not itself decide the languages of interface controls.
 
 ## Open UI questions
 
@@ -49,7 +51,7 @@ Detailed page layouts, player behaviour, navigation labels and language switchin
 | --- | --- | --- |
 | Q02 | Should completed episodes and overall path progress also be tracked, and what counts as completing an episode? | Defines progress indicators beyond the listening position. Device synchronisation of the listening position is already confirmed in D04; completion tracking remains open. |
 | Q03 | Which complete episodes serve as public samples, and how is access to the rest obtained? | Determines access labels and entry points. Prices, paid scope and Spotify entitlements remain open in the product documentation. |
-| Q04 | Which player controls are required, should audio continue while browsing other pages, and should the next episode start automatically? | Determines the visible player and behaviour during navigation and at the end of an episode. |
+| Q04 | Which controls and placement should the compact and full player provide, including seeking and playback speed? | Defines the player details. Continued playback during internal navigation is settled in D05; offering the next episode with an explicit start is settled in D06. |
 | Q05 | How should users select interface and content languages and reach the equivalent episode? | Determines language navigation and edition availability states. |
 | Q06 | Where should descriptions, prerequisites, teasers and supplementary cheatsheets appear? | Determines episode and learning path page structure. |
 | Q07 | What is the first delivery scope, and how should the path, catalogue and visual presentation relate? | Determines the page set, navigation emphasis and prototype boundaries. |
@@ -65,3 +67,5 @@ A framework, hosting provider, account system, payment mechanism and platform RA
 | 31 October 2026 | User selects teasers and selected complete lectures for visitors without signing in. | D02; sample selection and access to remaining lectures are unresolved. |
 | 31 October 2026 | User chooses a recommended main path with all accessible episodes directly selectable. | D03 resolves Q01; sequential completion is not an access condition. |
 | 31 October 2026 | User confirms continuing on a smartphone from the listening position saved on a computer. | D04 resolves the device availability part of Q02; completion tracking and listener recognition remain open. |
+| 31 October 2026 | User chooses continued playback with an accessible compact player while browsing the platform. | D05 resolves the internal navigation part of Q04. |
+| 31 October 2026 | User chooses to offer the next episode and wait for the listener to start it. | D06 resolves the end of lecture behaviour in Q04; detailed player controls remain open. |
