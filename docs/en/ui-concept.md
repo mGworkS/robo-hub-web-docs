@@ -16,6 +16,8 @@ The following choices were confirmed in the UI clarification on 31 October 2026.
 | --- | --- | --- |
 | D01 | Learning paths structure discovery and progression. | Represent the existing learning offer and its progression, using the humanoids structure below as the example. This does not yet decide whether the interface also offers an equally prominent catalogue. |
 | D02 | Visitors without signing in can listen to teasers and selected complete lectures. | Complete samples must be distinguishable from teasers. The particular sample episodes and access to other lectures remain open. |
+| D03 | The main path is a recommendation; all episodes available to the listener can be selected directly. | Starting an available episode does not depend on completing earlier episodes. Keep the recommended order and content prerequisites visible as guidance. |
+| D04 | Listening positions are available across devices. | A listener can resume the same episode on a smartphone at the position saved while listening on a computer, and vice versa. How the service recognises the same listener remains open. |
 
 ## Learning path example: Humanoids
 
@@ -33,7 +35,7 @@ Follow the [agreed humanoids structure](https://github.com/mGworkS/humanoid-pod-
 
 The main path follows the order shown after any needed prerequisites. Deep Dives can be relevant during the main path or afterwards; they are not a compulsory final stage. What’s Hot supplies time specific context. The source concept uses Deep Dives in place of the former Hot Takes label.
 
-This is a content progression, not a confirmed sequential unlocking rule. Episode counts and content prerequisites remain owned by the content documentation and are not generalised from humanoids to other subjects.
+The progression above is recommended guidance under D03. Episode counts and content prerequisites remain owned by the content documentation and are not generalised from humanoids to other subjects.
 
 ## Information available to the UI
 
@@ -45,13 +47,13 @@ Detailed page layouts, player behaviour, navigation labels and language switchin
 
 | ID | Question | Why it matters |
 | --- | --- | --- |
-| Q01 | Is the main path a recommendation with direct access to any entitled episode, or does completing an episode unlock the next one? | Determines navigation, episode actions and completion states. Skipping familiar prerequisites is already allowed. |
-| Q02 | What listening position and path progress should be remembered, and should it be available across devices? | Determines the return experience and whether an account is needed for synchronisation. |
+| Q02 | Should completed episodes and overall path progress also be tracked, and what counts as completing an episode? | Defines progress indicators beyond the listening position. Device synchronisation of the listening position is already confirmed in D04; completion tracking remains open. |
 | Q03 | Which complete episodes serve as public samples, and how is access to the rest obtained? | Determines access labels and entry points. Prices, paid scope and Spotify entitlements remain open in the product documentation. |
-| Q04 | Which player controls and playback continuity are required? | Determines how listening works while browsing or returning later. |
+| Q04 | Which player controls are required, should audio continue while browsing other pages, and should the next episode start automatically? | Determines the visible player and behaviour during navigation and at the end of an episode. |
 | Q05 | How should users select interface and content languages and reach the equivalent episode? | Determines language navigation and edition availability states. |
 | Q06 | Where should descriptions, prerequisites, teasers and supplementary cheatsheets appear? | Determines episode and learning path page structure. |
 | Q07 | What is the first delivery scope, and how should the path, catalogue and visual presentation relate? | Determines the page set, navigation emphasis and prototype boundaries. |
+| Q08 | How should a listener be recognised across devices, and how should the UI handle a new device, no saved position or unavailable synchronisation? | Specifies access and resume states needed for D04 without choosing an account system or technical architecture. |
 
 A framework, hosting provider, account system, payment mechanism and platform RAG feature have not been chosen. Technical implementation belongs in the web application repository after the relevant requirements are clarified.
 
@@ -61,3 +63,5 @@ A framework, hosting provider, account system, payment mechanism and platform RA
 | --- | --- | --- |
 | 31 October 2026 | User points to the existing learning offer as the learning path example. | D01; retain the source structure and clarify the remaining interaction rules. |
 | 31 October 2026 | User selects teasers and selected complete lectures for visitors without signing in. | D02; sample selection and access to remaining lectures are unresolved. |
+| 31 October 2026 | User chooses a recommended main path with all accessible episodes directly selectable. | D03 resolves Q01; sequential completion is not an access condition. |
+| 31 October 2026 | User confirms continuing on a smartphone from the listening position saved on a computer. | D04 resolves the device availability part of Q02; completion tracking and listener recognition remain open. |
