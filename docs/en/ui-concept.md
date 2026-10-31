@@ -20,6 +20,8 @@ The following choices were confirmed in the UI clarification on 31 October 2026.
 | D04 | Listening positions are available across devices. | A listener can resume the same episode on a smartphone at the position saved while listening on a computer, and vice versa. How the service recognises the same listener remains open. |
 | D05 | Audio continues while the listener browses other pages within the platform, with a compact player that remains accessible. | Internal page navigation preserves the current playback session. The compact player remains reachable on the supported device sizes; its detailed controls and placement remain open. |
 | D06 | At the end of a lecture, offer the next available episode and wait for the listener to start it. | Where a next episode exists, present it as a choice. Playback of the next episode begins only after the listener explicitly starts it. |
+| D07 | The application interface is available in German and English. | Provide navigation, controls and interface text in both languages. Whether interface and listening languages are selected independently remains open. Repository documentation remains English. |
+| D08 | Show completed episodes and progress for each learning path. | Display the listener's completion status and path progress in addition to the saved listening position. The completion rule and path progress calculation remain open. Progress indicators do not restrict episode selection under D03. |
 
 ## Learning path example: Humanoids
 
@@ -43,16 +45,16 @@ The progression above is recommended guidance under D03. Episode counts and cont
 
 Existing [editorial metadata](https://github.com/mGworkS/humanoid-pod-assets-docs/blob/main/docs/en/metadata_and_versioning.md) supplies episode titles, short descriptions, subject and series, audience, objectives, readable prerequisites and keywords. Public episode references use full titles; stable IDs associate content and language editions internally.
 
-Detailed page layouts, additional player controls, navigation labels and language switching remain to be specified. Playback during internal navigation and at the end of a lecture is defined in D05 and D06. The bilingual learning offer does not itself decide the languages of interface controls.
+Detailed page layouts, additional player controls, navigation labels and language switching remain to be specified. Playback during internal navigation and at the end of a lecture is defined in D05 and D06. German and English are confirmed for both learning editions and the application interface; their selection behaviour remains open.
 
 ## Open UI questions
 
 | ID | Question | Why it matters |
 | --- | --- | --- |
-| Q02 | Should completed episodes and overall path progress also be tracked, and what counts as completing an episode? | Defines progress indicators beyond the listening position. Device synchronisation of the listening position is already confirmed in D04; completion tracking remains open. |
+| Q02 | What counts as completing an episode, can the listener change its completion status manually, and which episodes contribute to path progress? | Defines the rules behind the episode completion and path progress indicators confirmed in D08. Device availability of the listening position is already confirmed in D04. |
 | Q03 | Which complete episodes serve as public samples, and how is access to the rest obtained? | Determines access labels and entry points. Prices, paid scope and Spotify entitlements remain open in the product documentation. |
 | Q04 | Which controls and placement should the compact and full player provide, including seeking and playback speed? | Defines the player details. Continued playback during internal navigation is settled in D05; offering the next episode with an explicit start is settled in D06. |
-| Q05 | How should users select interface and content languages and reach the equivalent episode? | Determines language navigation and edition availability states. |
+| Q05 | Should interface and listening languages be selected independently, and how should users switch to the equivalent episode? | German and English interface availability is settled in D07. Selection, switching behaviour and edition availability states remain open. |
 | Q06 | Where should descriptions, prerequisites, teasers and supplementary cheatsheets appear? | Determines episode and learning path page structure. |
 | Q07 | What is the first delivery scope, and how should the path, catalogue and visual presentation relate? | Determines the page set, navigation emphasis and prototype boundaries. |
 | Q08 | How should a listener be recognised across devices, and how should the UI handle a new device, no saved position or unavailable synchronisation? | Specifies access and resume states needed for D04 without choosing an account system or technical architecture. |
@@ -69,3 +71,5 @@ A framework, hosting provider, account system, payment mechanism and platform RA
 | 31 October 2026 | User confirms continuing on a smartphone from the listening position saved on a computer. | D04 resolves the device availability part of Q02; completion tracking and listener recognition remain open. |
 | 31 October 2026 | User chooses continued playback with an accessible compact player while browsing the platform. | D05 resolves the internal navigation part of Q04. |
 | 31 October 2026 | User chooses to offer the next episode and wait for the listener to start it. | D06 resolves the end of lecture behaviour in Q04; detailed player controls remain open. |
+| 31 October 2026 | User selects German and English for the application interface. | D07 settles interface language availability; language selection and switching remain open in Q05. |
+| 31 October 2026 | User chooses to display completed episodes and progress for each learning path. | D08 settles whether these indicators are included; completion and calculation rules remain open in Q02. |
